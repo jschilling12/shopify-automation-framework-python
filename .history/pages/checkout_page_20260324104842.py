@@ -53,9 +53,7 @@ class CheckoutProcess:
         self.customer_address.fill(customer_address)
         
         # Dropdown selector for the address fill.
-        element_locator = self.page.locator("#billing-address1-option-0[role='option']")
-        element_locator.wait_for(state="visible")
-        element_locator.click()
+        self.page.get_by_role("option", name=customer_address_option).click()
         self.page.wait_for_timeout(2000)
     
     def pay_now(self):

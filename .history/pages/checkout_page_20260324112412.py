@@ -53,7 +53,7 @@ class CheckoutProcess:
         self.customer_address.fill(customer_address)
         
         # Dropdown selector for the address fill.
-        element_locator = self.page.locator("#billing-address1-option-0[role='option']")
+        element_locator = self.page.locator("billing-address1-option-0")
         element_locator.wait_for(state="visible")
         element_locator.click()
         self.page.wait_for_timeout(2000)
