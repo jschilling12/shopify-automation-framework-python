@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 from addtocart_selectors import AddtocartSelectors
 
 #Add_to_Cart ONLY works on the Polished Products Shopify template.
@@ -23,7 +23,13 @@ class AddToCartProcess:
 
     def input_email(self, email):
         self.page.get_by_text("✉️ Email").first.click()
-        self.email.fill(email)
+        try:
+            # Primary email field path.
+            self.email.first.fill(email, timeout=2000)
+        except Exception:
+            # Fallback path when only promo email is active.
+            self.page.locator(self.selectors.promo_body).get_by_text("✉️ Email").click()
+            self.page.locator(self.selectors.promo_email).first.fill(email)
 
     def input_team(self, text_teamname):
         self.team_textbox.fill(text_teamname)

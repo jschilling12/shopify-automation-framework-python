@@ -24,6 +24,10 @@ class AddToCartProcess:
     def input_email(self, email):
         self.page.get_by_text("✉️ Email").first.click()
         self.email.fill(email)
+    
+    # def input_email_promo(self, email):
+    #     self.page.locator(self.selectors.promo_body).get_by_text("✉️ Email").click()
+    #     self.page.locator(self.selectors.promo_email).fill(email)
 
     def input_team(self, text_teamname):
         self.team_textbox.fill(text_teamname)
@@ -41,4 +45,5 @@ class AddToCartProcess:
         self.select_team(dropdown_teamname)
         self.input_email(email)
         self.input_team(text_teamname)
+        # self.input_email_promo(email)
         self.select_cart()

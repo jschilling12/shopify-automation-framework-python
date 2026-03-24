@@ -71,6 +71,7 @@ def add_to_cart_sel():
         selection_input_promo=".promo-option-card-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9.is-radio > .promo-option-inner-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9 > .promo-option-indicator-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
         promo_toggle=".epl-optin-toggle-checkbox-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
         promo_body="#epl-body-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
+        promo_email="#epl-email-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
         email="Email Address *",
         team="Favourite Team *",
         dropdown="Favourite EPL Team *",

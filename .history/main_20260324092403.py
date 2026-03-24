@@ -12,7 +12,7 @@ BASE_URL = "https://gamedaytldr.live/"
 TEXT_TEAMNAME = 'USA'
 
 # Dropdown for Premier League team
-DROPDOWN_TEAMNAME = 'Arsenal'
+DROPDOWN = 'Arsenal'
 EMAIL = 'fakeeamil@gmail.com'
 NUM = '1'
 EXP = '03/30'
@@ -34,7 +34,7 @@ add_to_cart_sel = AddtocartSelectors(
         ".promo-option-indicator-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
     promo_toggle=".epl-optin-toggle-checkbox-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
     promo_body ="#epl-body-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
-    # promo_email="#epl-email-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
+    promo_email="#epl-email-aodrsmzfpyxdet0hvraigenblock388c186ytkrd9",
     email= "Email Address *",
     team= "Favourite Team *",
     dropdown= "Favourite EPL Team *",
@@ -71,7 +71,7 @@ def main():
             cart_flow.add_to_cart(
                 EMAIL,
                 TEXT_TEAMNAME, 
-                DROPDOWN_TEAMNAME
+                DROPDOWN,
             )
 
             checkout_flow = CheckoutProcess(page, checkout_selectors)
