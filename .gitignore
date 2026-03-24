@@ -12,3 +12,6 @@ ENV/
 build/
 dist/
 .vscode/
+pages/__pycache__/
+pages/.pytest_cache/
+tests/__pycache__/
