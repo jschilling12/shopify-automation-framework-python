@@ -1,10 +1,10 @@
-# 🛍️ Shopify Automation Framework (Playwright + Python)
+# Shopify Automation Framework (Playwright + Python)
 
 A lightweight, production-style **end-to-end automation framework** for Shopify storefronts, built with a focus on **maintainability and scalability using the Page Object Model (POM)**.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 * **Playwright (Python)**
 * **Pytest**
@@ -13,7 +13,7 @@ A lightweight, production-style **end-to-end automation framework** for Shopify 
 
 ---
 
-## 🏗️ Architecture (POM)
+## Architecture (POM)
 
 The framework uses the **Page Object Model (POM)** to separate test logic from UI interactions.
 
@@ -36,7 +36,7 @@ The framework uses the **Page Object Model (POM)** to separate test logic from U
 
 ---
 
-## 🧩 Page Object Model (POM)
+## Page Object Model (POM)
 
 Each page object:
 
@@ -81,7 +81,7 @@ class CheckoutPage(BasePage):
 
 ---
 
-## 🧪 Example Test
+## Example Test
 
 ```python
 def test_user_can_complete_checkout(page):
@@ -103,7 +103,7 @@ def test_user_can_complete_checkout(page):
 
 ---
 
-## ▶️ Running the Tests
+## Running the Tests
 
 ### 1. Install dependencies
 
@@ -120,7 +120,7 @@ pytest
 
 ---
 
-## 🔁 CI Integration (GitHub Actions)
+## CI Integration (GitHub Actions)
 
 Tests run automatically on every push and pull request using GitHub Actions.
 
@@ -163,7 +163,7 @@ jobs:
 
 ---
 
-## 📊 What This Adds
+## What This Adds
 
 * Validates tests on every PR
 * Ensures Playwright + dependencies install cleanly
@@ -171,7 +171,7 @@ jobs:
 
 ---
 
-## 🧠 Summary (Updated)
+## Summary (Updated)
 
 * POM-based architecture for maintainability
 * Playwright + Pytest stack
