@@ -15,3 +15,7 @@ dist/
 pages/__pycache__/
 pages/.pytest_cache/
 tests/__pycache__/
+
+# Generated diagrams and local browser config
+docs/
+puppeteer-config.json
